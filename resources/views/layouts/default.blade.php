@@ -6,7 +6,10 @@
 
 
 @include('includes.menu')
+<main role="main">
+
 @yield('content')
+</main>
 @include('includes.jsfooter')
 
 </body>
