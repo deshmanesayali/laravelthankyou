@@ -31,9 +31,7 @@ class PageController extends Controller{
     function store(Request $request){
 
         $name = $request->name;
-        echo $name;
-
-       // return redirect()->route('thanks',['name' => $name]);
+        return redirect()->route('thanks',['name' => $name]);
 
     }
 

@@ -34,7 +34,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <textarea class="form-control textarea" rows="3" name="message" placeholder="Message"></textarea>
-                            
+
                         </div>
                     </div>
                 </div>
