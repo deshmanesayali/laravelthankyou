@@ -12,16 +12,35 @@
             <form role="form" id="contact-form" class="contact-form" action="{{route('contact.store')}}" method="post">
 
                 {{ csrf_field() }}
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" autocomplete="off" id="Name" placeholder="Name">
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="body">Message</label>
-                    <textarea name="body" class="form-control" id="body" rows="3"></textarea>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control textarea" rows="3" name="message" placeholder="Message"></textarea>
+                            
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+                <button type="submit" class="btn main-btn pull-right">Submit</button>
+
             </form>
         </div>
     </div>
