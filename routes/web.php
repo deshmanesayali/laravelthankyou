@@ -17,8 +17,9 @@ Route::get('/about', 'PageController@about') ->name('about');
 
 Route::get('/contact', 'PageController@contact') ->name('contact');
 
-Route::post('/contact', function () {
+Route::post('/contact', 'PageController@store') ->name('contact.store');
+
+/*Route::post('/contact', function () {
     $data= request()->all();
     echo "Email:" . $data['email'] . '<br>';
-    echo "Body:" . $data['body'];
-});
+    echo "Body:" . $data['body'];*/

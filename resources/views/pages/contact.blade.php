@@ -9,7 +9,7 @@
 
         <div class="card-body">
 
-            <form action="/contact" method="post">
+            <form role="form" id="contact-form" class="contact-form" action="{{route('contact.store')}}" method="post">
 
                 {{ csrf_field() }}
                 <div class="form-group">

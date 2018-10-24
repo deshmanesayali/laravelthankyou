@@ -32,7 +32,7 @@ class PageController extends Controller{
 
         $name = $request->name;
 
-        return redirect()->route('thanks',['name' => $name]);
+       // return redirect()->route('thanks',['name' => $name]);
 
     }
 
